@@ -1,0 +1,146 @@
+footer {
+  --contentWidth: 1200px;
+  padding: 2rem 1rem;
+}
+ 
+.inside {
+  max-width: var(--contentWidth);
+  margin: 0 auto;
+}
+
+header{
+
+	width: auto;
+	height:150px;
+    margin-top: 90px;S
+}
+
+.nav li{
+    color:black;
+}
+
+.nav a{
+    text-decoration:none;
+}
+
+img.logo{
+    width: 280px;
+    height: 40px;
+
+    }
+img.media{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-left: 10px;
+    margin-top: 10px;
+    }
+
+div.menu{
+    float: right;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+}
+ 
+.nav li {
+  width: 140px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 2px;
+}
+
+.main img{
+    width:100%;
+}
+
+h1{
+    font-size:50px;
+    font-family: fantasy;
+    text-align: center;
+    padding-top:80px;
+}
+
+div.contents{
+    text-align:  center; 
+
+}
+
+div.contents-item{
+    width: 300px;
+    display: inline-block;
+    margin-right: 40px;
+    vertical-align: text-top;
+
+}
+
+.jobicon{
+    width: 100px;
+    height: 100px;
+}
+
+
+div.contents_strategy{
+    text-align:  center; 
+
+}
+
+div.contents_strategy_item{
+    width: 300px;
+    display: inline-block;
+    margin-right: 40px;
+    vertical-align: text-top;
+    margin-top: 20px;
+
+}
+
+.strategy{
+    width: 100%;
+   
+}
+
+
+
+div.contents_blog{
+    text-align:  center; 
+
+}
+
+div.contents_blog_item{
+    width: 300px;
+    display: inline-block;
+    margin-right: 40px;
+    vertical-align: text-top;
+
+}
+
+.blog{
+    width: 100%;
+
+}
+
+div.footer{
+    margin-top: 200px;
+
+}
+
+h2{
+    font-size:40px;
+    color: gray;
+
+}
+
+.coment{
+    margin-bottom: 150px;
+}
+
+.screenshot img{
+    width: 100%;
+}
+
+h3{
+    font-weight: bold;
+}

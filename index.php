@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>testsite</title>
-    <link rel="stylesheet" href="stylesheet.css">   
+    <link rel="stylesheet" href="./css/stylesheet.css">   
 </head>
+
+<?php 
+require_once('./data/screenshotdata.php');
+
+?>
+
 <body>
 
+
+<!-- ヘッダー部分 -->
 <footer>
 <div class="inside">
 
 
 <header>
-    <img  class="logo" src="http://localhost/testsite/image/logo.jpg">
+    <a href="http://localhost/testsite/"> <img  class="logo" src="http://localhost/testsite/image/logo.jpg"></a>
     <img class="media" src="http://localhost/testsite/image/icon_facebook.gif">
     <img class="media" src="http://localhost/testsite/image/icon_instagram.gif">
 </header>
@@ -20,21 +28,26 @@
 <div class="menu">
 <p>
 <ul class="nav">
-<li>About</li>
-<li>Works</li>
-<li>Blog</li>
-<li>Contact</li>
+<a href="http://localhost/testsite/about"><li>ABOUT</li></a>
+<a href="http://localhost/testsite/screenshot"><li>SCREEN SHOT</li></a>
+<a href="http://localhost/testsite/blog"><li>BLOG</li></a>
+<a href="http://localhost/testsite/contact"><li>CONTACT</li></a>
 </ul>
 </p>
 </div>
 
 </div>
 </footer>
+<!-- ヘッダーここまで -->
 
+
+<!-- メインビジュアル -->
 <div class="main">
 <img src="http://localhost/testsite/image/top_main.jpg">
 </div>
+<!-- メインビジュアルここまで -->
 
+<!-- コンテンツここから -->
 <footer>
 <div class="inside">
 
@@ -70,7 +83,26 @@
 <p></p>
 
 <div>
-<h1>STRATEGY</h1>
+<h1>SCREEN SHOT</h1>
+</div>
+
+<!-- ループ記事を表示 -->
+<div class="contents_blog">
+    
+    <?php foreach($scss as $item): ?>
+    <div class="contents_blog_item">        
+        <a href="./screenshot/detail.php?name=<?php echo $item["name"]?>">　<!-- リンクにクエリ情報を付与 -->
+        <img class="blog" src="<?php echo $item["url"]; ?>"></a>    
+
+    </div>
+    <?php endforeach ?>    
+
+</div>   
+
+
+
+<div>
+<h1>BLOG</h1>
 </div>
 
 <div class="contents_strategy">
@@ -103,58 +135,24 @@
 
 
 
-<div>
-<h1>BLOG</h1>
-</div>
-
-<div class="contents_blog">
-
-    <div class="contents_blog_item">
-        <img class="blog" src="http://localhost/testsite/image/ffxiv_20210207_024900_162.png">
-    </div>
-
-    <div class="contents_blog_item">
-        <img class="blog" src="http://localhost/testsite/image/ffxiv_20210111_160054_335.png">
-    </div>
-
-    <div class="contents_blog_item">
-        <img class="blog" src="http://localhost/testsite/image/ffxiv_20201108_022722_987.png">
-    </div>
-
-    <div class="contents_blog_item">
-        <img class="blog" src="http://localhost/testsite/image/ffxiv_20201023_174746_462.png">
-    </div>
-
-    <div class="contents_blog_item">
-        <img class="blog" src="http://localhost/testsite/image/ffxiv_20210205_023755_085.png">
-    </div>
-
-    <div class="contents_blog_item">
-        <img class="blog" src="http://localhost/testsite/image/ffxiv_20201212_131238_072.png">
-    </div>
-
-    
-
-</div>   
-
-
+<!-- フッター -->
 <div class="footer">
 <p>
 <ul class="nav">
-<li>About</li>
-<li>Works</li>
-<li>Blog</li>
-<li>Contact</li>
+<a href="http://localhost/testsite/about"><li>ABOUT</li></a>
+<a href="http://localhost/testsite/screenshot"><li>SCREEN SHOT</li></a>
+<a href="http://localhost/testsite/blog"><li>BLOG</li></a>
+<a href="http://localhost/testsite/contact"><li>CONTACT</li></a>
+</ul>
 </ul>
 </p>
 </div>
 
 
-
-
 </div>
 </footer>
-
+<!-- フッターここまで -->
+<!-- コンテンツここまで -->
 
 
 </body>
