@@ -39,18 +39,71 @@
 <footer>
 <div class="inside">
 
-<h2>ABOUT</h2>
+<h2>CONTACT</h2>
 
-<div class="profeel">
+<div>
 <p>
-2011年からプレイ開始。<br>
-総プレイ時間17000時間<br>
-メインジョブ：竜騎士<br>
-攻略記事を執筆中！
+攻略の質問などありましたら、フォームから気軽にお問い合わせください。<br>
+「一緒に遊びたい！」などのお誘いも大歓迎です(*´ω｀*)<br>
 </p>
 </div>
 
-<p>以下略</p>
+<!-- お問い合わせフォーム -->
+<!-- 送信内容はform.phpへ送られる -->
+<div class="form">
+    <form action="form.php" method="post">
+        <p>【名前】</p>
+        <input type="text" name="name">
+
+        <p>【E-mail】</p>
+        <input type="text" name="email">
+
+        <p>【プレイサーバー】</p>
+        <select name="server">
+            <option value="chocobo">chocobo</potion>
+            <option value="mandoragora">mandoragora</potion>
+            <option value="titan">titan</potion>
+            <option value="bahamut">bahamut</potion>
+            <option value="pandaemonium">pandaemoniumu</potion>
+        </select>
+
+        <p>【得意ジョブ】</p>
+            <input type="checkbox" name="job[]" value="ナイト　">ナイト　
+            <input type="checkbox" name="job[]" value="暗黒騎士　">暗黒騎士　
+            <input type="checkbox" name="job[]" value="ガンブレイカー　">ガンブレイカー　
+            <input type="checkbox" name="job[]" value="竜騎士　">竜騎士　
+            <br>
+            <input type="checkbox" name="job[]" value="モンク　">モンク　
+            <input type="checkbox" name="job[]" value="黒魔道士　">黒魔道士　
+            <input type="checkbox" name="job[]" value="白魔道士　">白魔道士　
+            <input type="checkbox" name="job[]" value="占星術士　">占星術士　
+            
+
+        <p>【ログイン時間帯】</p>
+            <input type="radio" name="playtime" value="午前中">午前中　
+            <input type="radio" name="playtime" value="18:00～20:00">18:00～20:00　
+            <input type="radio" name="playtime" value="20:00～22:00">20:00～22:00　
+            <input type="radio" name="playtime" value="22:00以降">22:00以降　
+            <input type="radio" name="playtime" value="24時間">24時間　
+
+
+        <p>【問い合わせ内容】</p>
+        <textarea name="content"></textarea>
+
+        <br>
+
+        <input class="submit" type="submit" value="送信">
+
+
+
+    </form>
+
+</div>
+
+
+
+
+
 
 </div>   
 

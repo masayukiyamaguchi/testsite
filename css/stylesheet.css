@@ -144,3 +144,27 @@ h2{
 h3{
     font-weight: bold;
 }
+
+.form p{
+    padding-top: 20px;
+    position: relative;
+    top:10px;
+}
+
+.form textarea{
+    width: 500px;
+    height: 300px;
+}
+
+.submit{
+    margin-top: 50px;
+    width: 100px;
+    height: 80px;
+    font-size: 20px;
+}
+
+.send_detail p{
+    padding-top: 20px;
+    position: relative;
+    top:10px;
+}

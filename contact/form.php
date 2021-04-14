@@ -24,7 +24,7 @@
 <ul class="nav">
 <a href="http://localhost/testsite/about"><li>ABOUT</li></a>
 <a href="http://localhost/testsite/screenshot"><li>SCREEN SHOT</li></a>
-<a href="http://localhost/testsite/blog"><li><font color ="gray">BLOG</font></li></a>
+<a href="http://localhost/testsite/blog"><li>BLOG</li></a>
 <a href="http://localhost/testsite/contact"><li>CONTACT</li></a>
 </ul>
 </p>
@@ -39,13 +39,29 @@
 <footer>
 <div class="inside">
 
-<h2>ABOUT</h2>
+    <h2>送信内容</h2>
 
-<div class="profeel">
-<p>
-準備中
-</p>
-</div>
+    <div class="send_detail">
+        <p>【名前】</p> 
+        <?php echo $_POST["name"]; ?>
+        <p>【E-mail】</p>
+        <?php echo $_POST["email"]; ?>
+        <p>【プレイサーバー】</p>
+        <?php echo $_POST["server"]; ?>
+        <p>【得意ジョブ】</p>
+        <?php foreach($_POST["job"] as $job): ?>
+            <?php echo $job; ?>
+            <br>
+        <?php endforeach?>            
+
+        <p>【ログイン時間帯】</p>
+        <?php echo $_POST["playtime"]; ?>
+        <p>【問い合わせ内容】</p>
+        <?php echo $_POST["content"]; ?>
+    </div>
+
+
+
 
 
 </div>   
@@ -59,7 +75,7 @@
 <a href="http://localhost/testsite/about"><li>ABOUT</li></a>
 <a href="http://localhost/testsite/screenshot"><li>SCREEN SHOT</li></a>
 <a href="http://localhost/testsite/blog"><li>BLOG</li></a>
-<a href="http://localhost/testsite/contact"><li>CONTACT</li></a>
+<a href="http://localhost/testsite/contact"><li><font color ="gray">CONTACT</font></li></a>
 </ul>
 </ul>
 </p>
